@@ -5,3 +5,12 @@
   padding: 0;
   cursor: pointer;
 }
+
+
+/* Colour scheme for dark-mode  */
+@media (prefers-color-scheme: dark){
+    html {
+        background-color: hsl(225, 10%, 16%);
+        color: rgb(197, 219, 197);
+    }
+}
