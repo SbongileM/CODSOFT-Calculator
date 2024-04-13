@@ -54,7 +54,7 @@ input{
     height: 55px;
     font-weight: 1%;
     border: none;
-}
+} 
 
 /* Colour scheme for sign buttons */
 .sign{
@@ -72,6 +72,12 @@ input{
 .equal{
     background-color: rgb(4, 251, 12);
     color: hsla(133, 9%, 19%, 0.993);
+}
+
+/* Buttons hover colour */
+.buttons input:hover,
+#C:hover{
+    background-color: rgb(129, 134, 139);
 }
 
 
