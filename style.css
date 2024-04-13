@@ -13,6 +13,33 @@ main {
     margin-top:5%;
 }
 
+/* Settings for both screen and buttons */
+input{
+    border-radius: 7px;
+    background-color: hsla(0, 0%, 100%, 0.363);
+    font-size: 1.5rem;  
+}
+
+/* Screen area style declaration */
+.screen input{
+    width:300px;
+    height: 60px;
+    font-size: 2rem;
+    text-align: end;
+}
+
+/* Buttons style and sizing */
+.buttons{
+    margin-bottom:2%;
+}
+
+.buttons input{
+    width:60px;
+    height: 55px;
+    font-weight: 1%;
+    border: none;
+}
+
 
 /* Colour scheme for dark-mode  */
 @media (prefers-color-scheme: dark){
