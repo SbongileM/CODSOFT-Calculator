@@ -56,6 +56,24 @@ input{
     border: none;
 }
 
+/* Colour scheme for sign buttons */
+.sign{
+    color: rgb(4, 251, 12);
+    background-color: hsla(220, 2%, 25%, 0.601);
+}
+
+/* Colour scheme for reset button */
+#C{
+    color: rgb(251, 53, 4);
+    background-color: hsla(220, 2%, 32%, 0.629);
+}
+
+/* Colour scheme for equal button */
+.equal{
+    background-color: rgb(4, 251, 12);
+    color: hsla(133, 9%, 19%, 0.993);
+}
+
 
 /* Colour scheme for dark-mode  */
 @media (prefers-color-scheme: dark){
