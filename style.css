@@ -13,6 +13,22 @@ main {
     margin-top:5%;
 }
 
+/* Calculator form styling */
+.container{
+    background-color: rgba(142, 152, 144, 0.867);
+    width:fit-content;
+    width:-moz-fit-content;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit);
+    align-content: center;
+    margin: 0 auto;
+    gap: 20px;
+}
+
 /* Settings for both screen and buttons */
 input{
     border-radius: 7px;
