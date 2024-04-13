@@ -10,7 +10,6 @@
 main {
     font-family: Consolas, "Courier New", monospace;
     text-align: center;
-    margin-inline: 39%;
     margin-top:5%;
 }
 
@@ -18,25 +17,31 @@ main {
 /* Colour scheme for dark-mode  */
 @media (prefers-color-scheme: dark){
     html {
-        background-color: hsla(240, 7%, 8%, 0.954);
+        background-color: black;
     }
     
     .container{
-        background-color: hsl(220, 9%, 19%);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: hsla(240, 10%, 4%, 0.917);
     }
     
     input{
         color: rgb(165, 199, 172);
-        background-color: hsla(218, 6%, 65%, 0.233);  
+        background-color: hsl(220, 8%, 8%);  
     }
     
-    .buttons input{
-        border-color: rgb(105, 113, 106);
+    .sign{
+        color: rgb(4, 251, 12);
+        background-color: hsla(220, 2%, 25%, 0.699);
+    }
+    
+    #C{
+        color: rgb(251, 53, 4);
+        background-color: hsla(220, 2%, 32%, 0.629);
     }
     
     .equal{
         background-color: rgb(4, 251, 12);
         color: hsla(133, 9%, 19%, 0.993);
     }
+    
 }
