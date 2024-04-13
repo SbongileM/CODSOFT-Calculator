@@ -9,16 +9,34 @@
 /* Settings for main section */
 main {
     font-family: Consolas, "Courier New", monospace;
-    font-size: 1.5rem;
     text-align: center;
-    margin: 10%;
-  }
+    margin-inline: 39%;
+    margin-top:5%;
+}
 
 
 /* Colour scheme for dark-mode  */
 @media (prefers-color-scheme: dark){
     html {
-        background-color: hsl(225, 10%, 16%);
-        color: rgb(197, 219, 197);
+        background-color: hsla(240, 7%, 8%, 0.954);
+    }
+    
+    .container{
+        background-color: hsl(220, 9%, 19%);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    input{
+        color: rgb(165, 199, 172);
+        background-color: hsla(218, 6%, 65%, 0.233);  
+    }
+    
+    .buttons input{
+        border-color: rgb(105, 113, 106);
+    }
+    
+    .equal{
+        background-color: rgb(4, 251, 12);
+        color: hsla(133, 9%, 19%, 0.993);
     }
 }
