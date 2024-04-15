@@ -1,61 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Sbongile ZP Mdaki">
-    <meta name="description" content="Standard Calculator Application">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sbongile ZP Mdaki" />
+    <meta name="description" content="Standard Calculator Application" />
     <title>Standard Calculator</title>
     <link rel="icon" href="page_icon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" type="text/css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
-        <div class="container">
-            <form action="server/get" method="get">
-                <div class="screen">
-                    <input type="text" name="screen" placeholder="0">
-                </div>
-                <br>
-                <div class="buttons">
-                    <input id="C" type="button" name="reset" value="C">
-                    <input class="sign" type="button" name="Lparenthesis" value="(">
-                    <input class="sign" type="button" name="Rparenthesis" value=")">
-                    <input class="sign" type="button" name="percentage" value="%">
-                </div>
-                <div class="buttons">
-                    <input type="button" name="delete" value="<x]">
-                    <input type="button" name="squared" value="x^2">
-                    <input type="button" name="square_root" value="√x">
-                    <input class="sign" type="button" name="division" value="÷">
-                </div>
-                <div class="buttons">
-                    <input type="button" name="seven" value="7">
-                    <input type="button" name="eight" value="8">
-                    <input type="button" name="nine" value="9">
-                    <input class="sign" type="button" name="multiplication" value="×">
-                </div>
-                <div class="buttons">
-                    <input type="button" name="four" value="4">
-                    <input type="button" name="five" value="5">
-                    <input type="button" name="six" value="6">
-                    <input class="sign" type="button" name="subtraction" value="-">
-                </div>
-                <div class="buttons">
-                    <input type="button" name="three" value="3">
-                    <input type="button" name="two" value="2">
-                    <input type="button" name="one" value="1">
-                    <input class="sign" type="button" name="addition" value="+">
-                </div>
-                <div class="buttons">
-                    <input type="button" name="plus/minus" value="+/-">
-                    <input type="button" name="zero" value="0">
-                    <input type="button" name="point" value=".">
-                    <input class="equal" type="button" name="equal" value="=" >
-                </div>
-            </form>
-        </div>
+      <div class="container">
+        <form method="post">
+          <div class="screen">
+            <input
+              id="scrn"
+              type="text"
+              name="screen"
+              placeholder="0"
+              readonly
+            />
+          </div>
+          <br />
+          <div class="buttons">
+            <input
+              id="C"
+              type="button"
+              name="reset"
+              value="C"
+              onclick="pressed('C')"
+            />
+            <input
+              class="sign"
+              type="button"
+              name="Lparenthesis"
+              value="("
+              onclick="pressed('(')"
+            />
+            <input
+              class="sign"
+              type="button"
+              name="Rparenthesis"
+              value=")"
+              onclick="pressed(')')"
+            />
+            <input
+              class="sign"
+              type="button"
+              name="percentage"
+              value="%"
+              onclick="percent()"
+            />
+          </div>
+          <div class="buttons">
+            <input
+              type="button"
+              name="delete"
+              value="<x]"
+              onclick="pressed('del')"
+            />
+            <input
+              type="button"
+              name="squared"
+              value="x^2"
+              onclick="square()"
+            />
+            <input
+              type="button"
+              name="square_root"
+              value="√x"
+              onclick="root()"
+            />
+            <input
+              class="sign"
+              type="button"
+              name="division"
+              value="÷"
+              onclick="pressed('/')"
+            />
+          </div>
+          <div class="buttons">
+            <input
+              type="button"
+              name="seven"
+              value="7"
+              onclick="pressed('7')"
+            />
+            <input
+              type="button"
+              name="eight"
+              value="8"
+              onclick="pressed('8')"
+            />
+            <input type="button" name="nine" value="9" onclick="pressed('9')" />
+            <input
+              class="sign"
+              type="button"
+              name="multiplication"
+              value="×"
+              onclick="pressed('*')"
+            />
+          </div>
+          <div class="buttons">
+            <input type="button" name="four" value="4" onclick="pressed('4')" />
+            <input type="button" name="five" value="5" onclick="pressed('5')" />
+            <input type="button" name="six" value="6" onclick="pressed('6')" />
+            <input
+              class="sign"
+              type="button"
+              name="subtraction"
+              value="-"
+              onclick="pressed('-')"
+            />
+          </div>
+          <div class="buttons">
+            <input
+              type="button"
+              name="three"
+              value="3"
+              onclick="pressed('3')"
+            />
+            <input type="button" name="two" value="2" onclick="pressed('2')" />
+            <input type="button" name="one" value="1" onclick="pressed('1')" />
+            <input
+              class="sign"
+              type="button"
+              name="addition"
+              value="+"
+              onclick="pressed('+')"
+            />
+          </div>
+          <div class="buttons">
+            <input
+              type="button"
+              name="plus/minus"
+              value="+/-"
+              onclick="pressed('-')"
+            />
+            <input type="button" name="zero" value="0" onclick="pressed('0')" />
+            <input type="button" name="point" value="." onclick="dec_point()" />
+            <input
+              class="equal"
+              type="button"
+              name="equal"
+              value="="
+              onclick="calculate()"
+            />
+          </div>
+        </form>
+      </div>
     </main>
-</body>
+  </body>
 </html>

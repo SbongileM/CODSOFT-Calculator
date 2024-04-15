@@ -17,8 +17,8 @@ main {
 /* Calculator form styling */
 .container{
     background-color: rgba(142, 152, 144, 0.867);
-    width:fit-content;
     width:-moz-fit-content;
+    width:fit-content;
     height: auto;
     border-radius: 12px;
     padding: 15px;
